@@ -5,6 +5,7 @@
     justify-content: center;
     position: relative;
     align-items: center;
+    cursor: pointer;
     border-radius: 200px;
     gap: 80px;
 }
