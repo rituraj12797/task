@@ -1,0 +1,68 @@
+.container{
+    height: 5%;
+    width: 14%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    border-radius: 200px;
+    gap: 80px;
+}
+.container:hover > .arrowCont{
+    width: 100%;
+    justify-content: end;
+    animation: arrow 0.2s normal forwards 1 ;
+    padding-right: 20px;
+    background-color: black;
+    color: white;
+
+}
+.container:hover > .text_cont{
+    color: white;
+    margin-left: -10px;
+
+
+}
+.arrowCont{
+    z-index: -1;
+    position: absolute;
+    height: 50px;
+    left: 0;
+    border-radius: 25px;
+    background-color: rgba(128, 128, 128, 0.407);
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    color: rgb(113, 113, 113);
+    align-items: center;
+    transition: 0.2s all ease-in;
+}
+.text_cont{
+    height: 100%;
+    z-index: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s all ease-in;
+
+}
+
+@keyframes arrow{
+    0%{
+        color: rgb(113, 113, 113);
+
+    }
+    2%{
+    color: rgba(113, 113, 113, 0);
+    }
+    98%{
+    color: rgba(255, 255, 255, 0);
+
+    }
+    100%{
+        color: white;
+    }
+}
